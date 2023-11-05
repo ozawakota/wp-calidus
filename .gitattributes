@@ -1,0 +1,8 @@
+# /*.* export-ignore
+# /config export-ignore
+# /docker export-ignore
+# /docs export-ignore
+# /htdocs_dev export-ignore
+# /src export-ignore
+# /task export-ignore
+# /web export-ignore

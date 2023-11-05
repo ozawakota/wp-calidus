@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/*
+Theme Name: Calidus
+Theme URL: テーマのサイトのURI
+Description: Calidusのホームページです。
+Author: Calidus
+*/
+
+/*===============================================
+●style_sp.css 
+===============================================*/
+@media screen and (max-width: 950px) {
+  .pc_header img {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .for_pc {
+    display: none;
+  }
+/*--------------------------------------------
+		ヘッダー
+--------------------------------------------*/
+.sp_header{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  box-sizing: border-box;
+  background-color: #eaf8e2;
+}
+.sp_header .logo{
+  width: 100%;
+}
+.sp_header .logo img{
+  width: 13rem;
+  height: 60px;
+}
+
+/*ハンバーガーMENU*/
+nav.NavMenu{
+position: fixed;
+z-index: 12;
+top: 0;
+left: 0;
+background: #F7F7F7;
+text-align: center;
+width: 100%;
+height: 100%;
+display: none;
+}
+
+nav.NavMenu ul{
+width: 100%;
+margin: 0 auto;
+padding: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateY(-50%) translateX(-50%);
+}
+
+nav.NavMenu ul li{
+width: 100%;
+padding-bottom: 0px;
+}
+nav.NavMenu ul li img{
+  max-width: 140px;
+}
+nav.NavMenu ul li a{
+  display: block;
+  padding: 12px 0;
+  font-weight: 700;
+  color:#5bb129;
+  text-decoration: none;
+}
+nav.NavMenu ul .service{
+  font-weight: 700;
+}
+nav.NavMenu ul .service dl{
+  margin-top: 0;
+}
+nav.NavMenu ul .service dd a{
+  font-size: 1.4rem;
+  padding: 8px 0;
+  line-height: 1.2;
+}
+
+nav.NavMenu ul li dl{
+  display: block;
+  padding:0 5%;
+  margin-top: 2%;
+}
+nav.NavMenu ul li dl dd a.btn{
+  color: #fff;
+  padding: 10px 2rem;
+  width: 60%;
+  text-decoration: none;
+  font-weight: 700;
+  align-items: center;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  border: 2px solid var(--base-white, #fff);
+  background: var(--base-accent, #e4572e);
+  box-shadow: 0px 3px 3px 0px rgba(228, 87, 46, 0.2);
+}
+nav.NavMenu ul li dl dd a.btn:before{
+  content: url(img/common/contact_icon01.svg);
+  margin-right: 4px;
+  vertical-align: -5px;
+}
+nav.NavMenu ul li dl dd.tel a.btn{
+  margin-top: 1rem;
+}
+nav.NavMenu ul li dl dd.tel a.btn:before{
+  content: url(img/common/contact_icon02.svg);
+  margin-right: 4px;
+}
+/*ボタンのスタイル*/
+.Toggle {
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 13;
+  display: block;
+}
+.Toggle span {
+  display: block;
+  position: absolute;
+  width: 2.7rem;
+  border-bottom: solid 2px #8e8e8e;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+  left: 6px;
+}
+.Toggle span:nth-child(1) {
+  top: 22%;
+}
+.Toggle span:nth-child(2) {
+  top: 41%;
+}
+.Toggle span:nth-child(3) {
+top: 60%;
+}
+.Toggle.active span:nth-child(1) {
+top: 18px;
+left: 6px;
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+transform: rotate(-45deg);
+border-bottom: solid 2px #8e8e8e;
+}
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+top: 18px;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+transform: rotate(45deg);
+border-bottom: solid 2px #8e8e8e;
+}
+
+
+/*--------------------------------------------
+		サイト基本設定
+--------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+.inner {
+  max-width: 100%;
+  padding: 0 5%;
+}
+
+h2 {
+  font-size: 4.8rem;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h4 span {
+  font-size: 1.8rem;
+}
+p {
+  margin-bottom: 24px;
+}
+.btn  {
+  padding: 6px 12px;
+}
+table tr th {
+  padding: 4px 14px;
+  width: 29%;
+}
+table tr td {
+  padding: 4px 14px;
+  display: table-cell;
+}
+/*--------------------------------------------
+		フッター
+--------------------------------------------*/
+footer {
+  padding: 50px 0;
+}
+footer .contentsArea {
+  display: block;
+}
+footer ul li:first-child {
+  margin-bottom: 24px;
+}
+footer ul li:first-child img {
+  max-width: 180px;
+}
+footer ul dl {
+  margin-bottom: 14px;
+}
+footer ul dl dd {
+  margin-bottom: 4px;
+}
+footer .sub {
+  margin-top: 20px;
+}
+footer .top_btn img {
+  top: -3%;
+}
+#voicearea ul dl .voice_btn a {
+  padding: 8px 24px;
+}
+
+/*--------------------------------------------
+		トップページ
+--------------------------------------------*/
+/* FV */
+#fv {
+  height: 555px;
+}
+#fv .keyimg{
+  height: 50%;
+  border-radius: 0 0 0 100px;
+  width: calc(0% + 80%);
+}
+
+#fv .txtArea img.logo{
+  max-width: 270px;
+  margin-bottom: 14px;
+}
+#fv .txtArea img.main{
+  max-width: 160px;
+  left: 3%;
+  top: -110%;
+}
+#fv .txtArea{
+  z-index: 2;
+  transform: translateY(140%);
+  text-align: center;
+}
+#fv .txtArea p{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+#fv .txtArea .btn{
+  max-width: 100%;
+}
+/* News：最新記事 */
+#news_new{
+  padding: 30px 0 0;
+}
+#news_new .new{
+  max-width: 100%;
+}
+/* ABOUT：Calidus：カリダスについて */
+#about .inner{
+  display: flex;
+  flex-direction:column-reverse;
+}
+#about .txtArea{
+  margin-left: 0px;
+}
+#about .txtArea ul{
+  display: block;
+  margin: 24px 0;
+}
+#about .txtArea ul li{
+  width: 145px;
+  margin: 0 auto;
+  margin-bottom: 0rem;
+}
+#about .txtArea ul li:after{
+  content: url(img/arrow_btm.png);
+  position: static;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+/* Valure：Calidus：カリダスについて */
+#value{
+  background-image: url(img/contact_bg.svg);
+  background-position: left 1300% top 0px;        
+}
+#value ul.contentsArea li {
+  display: block;
+}
+#value ul.contentsArea li.list {
+  padding: 20px;
+  margin-bottom: 24px;
+}
+#value ul.contentsArea li.list:last-child {
+  margin-bottom: 0;
+}
+#value ul.contentsArea li.list img{
+  max-width: 220px;
+  display: block;
+  margin: 10px auto 0;
+}
+#value ul.contentsArea li.list .for{
+  font-size: 1.5rem;
+}
+#value ul.contentsArea li.list .for span{
+  display: block;
+}
+#value .value_txt{
+  bottom: -60px;
+  right: 5%;
+  max-width: 63%;
+}
+/* Case Study：導入事例 */
+#casestudy .contentsArea{
+  display: block;
+  margin-bottom: 24px;
+}
+#casestudy .contentsArea .txtArea{
+  margin-right: 0;
+}
+#casestudy ul{
+  flex-wrap: wrap;
+}
+#casestudy ul li{
+  width: 43%;
+}
+#casestudy ul li:nth-child(n+1):nth-child(-n+4){
+  margin-bottom: 14px;
+}
+
+/* Flow：導入までの流れ */
+#flow ul{
+  display: block;
+}
+#flow ul li{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+#flow ul li:last-child{
+  margin-bottom: 0;
+}
+#flow ul li:after {
+  content: url(img/arrow_btm.png);
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  margin-top: 7rem;
+}
+#flow ul li p {
+  font-size: 1.6rem;
+  text-align: left;
+} 
+#flow ul li:not(:nth-child(2)) p { 
+  margin-top: 0rem;
+}
+#flow ul li img{
+  max-width: 62px;
+  display: block;
+  margin: 0 14px 0 0;
+}
+#flow ul li img.num{
+  top: -13%;
+  max-width: 42px;
+}
+/*--------------------------------------------
+		お問い合わせ
+--------------------------------------------*/
+#contact{
+  background: #DD5519;
+  background-image: url(img/contact_bg.svg);
+  background-repeat:no-repeat;
+  background-position: right 1200% top 0px;
+}
+#contact .inner h2{
+  margin-bottom: 0;
+}
+#contact .contentsArea{
+  padding: 30px 16px;
+  max-width: 100%;
+}
+#contact .contact_txt{
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  max-width: 100%;
+}
+/*お問い合わせフォーム*/
+#contact .name{
+  display: block;
+}
+#contact .name .name_sei,#contact .name .name_mei{
+  width: 100%;
+}
+#contact input,#contact textarea {
+    box-sizing: border-box;
+}
+.checkout div p span span {
+    margin-left: 0rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.wpcf7-list-item {
+    margin: 0;
+}
+#contact .send_button p:after {
+    right: 14%;
+}
+
+/* News：ニュース */
+#top_news h2{
+  text-align: left;
+  margin-left: 5%;
+}
+
+/* Company：運営会社 */
+#company h3{
+  margin-bottom: 4px;
+}
+#company p{
+  font-size: 1.8rem;
+}
+/*--------------------------------------------
+		プライバシーポリシー
+--------------------------------------------*/
+#privacypolicy{
+  padding-top: 60px;
+}
+#privacypolicy table {
+  width: 100%;
+  box-sizing: border-box;
+}
+#privacypolicy table tr th {
+  width: 12rem;
+}
+#privacypolicy table tr td {
+  width: 85%;
+}
+
+}

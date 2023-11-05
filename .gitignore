@@ -1,0 +1,21 @@
+.DS_Store
+Thumbs.db
+/node_modules/
+*.log
+
+# gitkeep
+!/**/.gitkeep
+
+# ダンプファイルを除外
+# /docker/mysql/db_dump/*
+
+# htdocsを除外
+# /htdocs/*
+# /htdocs_dev/*
+
+# WordPress
+/web/wp/*
+!/web/wp/wp-content/
+/web/wp/wp-content/*
+!/web/wp/wp-content/uploads/
+!/web/wp/wp-content/plugins/
